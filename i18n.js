@@ -825,6 +825,9 @@ function setLanguage(lang) {
     const page = el.getAttribute('data-i18n-href-guide');
     el.href = `https://docs.luxstage.app/${lang}/guide/${page}.html`;
   });
+  document.querySelectorAll('[data-i18n-href-privacy]').forEach(el => {
+    el.href = lang === 'en' ? 'privacy.html' : 'datenschutz.html';
+  });
   // Update page title
   const titleKey = document.documentElement.getAttribute('data-i18n-page-title');
   if (titleKey && translations[lang][titleKey]) {

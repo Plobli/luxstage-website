@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung – LuxStage</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://umami.moschu.net/script.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
+  <script defer src="https://umami.moschu.net/recorder.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
+</head>
+<body class="bg-gray-950 text-white font-sans antialiased">
+
+  <div id="nav-container"></div>
+
+  <section class="relative overflow-hidden pt-32 pb-24 grid-bg">
+    <div class="relative mx-auto max-w-3xl px-6 lg:px-8">
+      <h1 class="text-4xl font-semibold tracking-tight text-white mb-2">Datenschutzerklärung</h1>
+      <p class="text-sm text-gray-500 mb-10">Zuletzt aktualisiert: September 2026</p>
+
+      <div class="text-gray-400 space-y-8 leading-relaxed">
+
+        <section>
+          <p>
+            Diese Datenschutzerklärung gilt für die <strong class="text-white">iOS-App</strong> und für die
+            <strong class="text-white">Web-App</strong>, unabhängig davon, ob du LuxStage selbst hostest oder
+            als gehosteten Dienst unter <a href="index.html" class="text-accent hover:underline">luxstage.app</a> nutzt.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Überblick</h2>
+          <p>
+            LuxStage ist darauf ausgelegt, <strong class="text-white">keine personenbezogenen Daten zu sammeln</strong>.
+            Beide Apps kommunizieren ausschließlich mit dem LuxStage-Server — bei Self-Hosting mit deinem eigenen
+            Server, beim gehosteten Dienst mit dem Server des Betreibers. Es findet keine Kommunikation mit Servern
+            von Drittanbietern statt — <strong class="text-white">mit einer Ausnahme:</strong> Nutzt du in der
+            Web-App die Funktion „Kreisliste scannen", wird das dabei hochgeladene Foto an die API von Anthropic
+            übertragen (siehe Abschnitt <a href="#kreisliste-scannen" class="text-accent hover:underline">Kreisliste scannen (KI-Foto-Scan)</a>).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Web-App und Self-Hosting</h2>
+          <p>
+            Die Web-App läuft im Browser und speichert lokal nur die Server-Adresse sowie die gewählte
+            Anzeigesprache (<code class="text-gray-300">localStorage</code>). Show-Daten (Kreispläne, Fotos,
+            Grundrisse, Nutzerkonten) werden ausschließlich auf dem LuxStage-Server verarbeitet und gespeichert.
+          </p>
+          <p class="mt-3">
+            Bei <strong class="text-white">Self-Hosting</strong> bist du selbst verantwortlicher Betreiber im
+            Sinne der DSGVO und für Datensicherheit, Zugriffsschutz und etwaige Auftragsverarbeitung (z. B. bei
+            einem Hosting-Anbieter für den Server) selbst verantwortlich.
+          </p>
+          <p class="mt-3">
+            Beim <strong class="text-white">gehosteten Dienst</strong> (luxstage.app) ist der Betreiber von
+            LuxStage verantwortliche Stelle für die dort gespeicherten Daten.
+          </p>
+        </section>
+
+        <section id="kreisliste-scannen">
+          <h2 class="text-lg font-semibold text-white mb-2">Kreisliste scannen (KI-Foto-Scan)</h2>
+          <p>
+            Die Web-App bietet unter „Importieren" die Funktion <strong class="text-white">„Kreisliste scannen"</strong>:
+            Ein Foto einer ausgefüllten Kreisliste (Vordruck oder handschriftlich) wird hochgeladen, damit Filter,
+            Notizen und neue Kreise automatisch ausgelesen werden können.
+          </p>
+          <p class="mt-3">
+            Für diese Funktion wird das hochgeladene Foto an die <strong class="text-white">API von Anthropic</strong>
+            (Claude Vision, Anbieter des zugrundeliegenden KI-Modells) übertragen und dort zur Texterkennung
+            verarbeitet. Dies ist die einzige Ausnahme von der Regel, dass LuxStage ausschließlich mit dem eigenen
+            LuxStage-Server kommuniziert.
+          </p>
+          <ul class="list-disc list-outside pl-5 mt-3 space-y-1.5">
+            <li>Die Übertragung erfolgt <strong class="text-white">nur</strong>, wenn du die Funktion „Kreisliste scannen" aktiv nutzt.</li>
+            <li>Es werden keine weiteren Show- oder Nutzerdaten an Anthropic übermittelt, nur das ausgewählte Foto sowie zur besseren Erkennung die bereits in der Show hinterlegten Kreisdaten (Kreisnummer, Adresse, Gerät, Position) als Lesehilfe.</li>
+            <li>Das Ergebnis wird in einer Vorschau angezeigt, in der du jede erkannte Änderung einzeln abwählen kannst, bevor sie übernommen wird.</li>
+            <li>Es gelten die <a href="https://www.anthropic.com/legal/privacy" class="text-accent hover:underline" target="_blank" rel="noopener">Datenschutzbestimmungen von Anthropic</a>.</li>
+          </ul>
+          <p class="mt-3">
+            Wer diese Funktion nicht nutzt, für den ändert sich nichts — die übrigen Wege zum Anlegen einer
+            Kreisliste (manuell, EOS-Import, CSV-Import) kommunizieren ausschließlich mit dem eigenen
+            LuxStage-Server.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Welche Daten werden gespeichert?</h2>
+          <h3 class="text-base font-semibold text-white mt-4 mb-1.5">Lokal auf deinem Gerät</h3>
+          <p>Die iOS-App speichert ausschließlich folgende Daten lokal auf deinem Gerät:</p>
+          <ul class="list-disc list-outside pl-5 mt-2 space-y-1.5">
+            <li><strong class="text-white">Server-URL</strong> — die Adresse deines selbst gehosteten LuxStage-Servers</li>
+            <li><strong class="text-white">EOS-User-ID</strong> — eine gerätespezifische Einstellung für die OSC-Steuerung (Zahl 1–99)</li>
+            <li><strong class="text-white">Spracheinstellung</strong> — die gewählte Anzeigesprache der App</li>
+          </ul>
+          <p class="mt-3">Die App selbst überträgt diese Daten nicht an den App-Entwickler oder Dritte.</p>
+
+          <h3 class="text-base font-semibold text-white mt-4 mb-1.5">Auf deinem eigenen Server</h3>
+          <p>
+            Die iOS-App überträgt Show-Daten (Kreispläne, Fotos, Grundrisse) ausschließlich mit dem
+            LuxStage-Server, den du selbst betreibst. Welche Daten dort gespeichert werden, liegt vollständig
+            in deiner Kontrolle. Für die Datensicherheit auf deinem eigenen Server bist du selbst verantwortlich.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Datenerhebung durch Apple</h2>
+          <p>
+            Beim Download der App aus dem App Store gelten die
+            <a href="https://www.apple.com/de/privacy/" class="text-accent hover:underline" target="_blank" rel="noopener">Datenschutzrichtlinien von Apple</a>.
+            Apple kann im Rahmen des App-Store-Betriebs Diagnosedaten und Kaufinformationen erfassen. Diese Daten
+            werden von Apple verwaltet und nicht an den App-Entwickler weitergegeben.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Analysedaten &amp; Tracking</h2>
+          <p>
+            Die LuxStage-App enthält <strong class="text-white">kein Tracking</strong>,
+            <strong class="text-white">keine Analysebibliotheken</strong> und <strong class="text-white">keine Werbung</strong>.
+            Es werden keine Nutzungsdaten an den App-Entwickler übermittelt.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Kamera und Fotos</h2>
+          <p>
+            Die App kann — sofern du es erlaubst — auf deine <strong class="text-white">Kamera</strong> und
+            <strong class="text-white">Fotobibliothek</strong> zugreifen, um Fotos zu einer Show hinzuzufügen.
+            Diese Fotos werden ausschließlich auf deinen eigenen LuxStage-Server hochgeladen und nicht an Dritte
+            weitergeleitet.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Netzwerkzugriff</h2>
+          <p>Die App stellt Verbindungen zu folgenden Zielen her:</p>
+          <ul class="list-disc list-outside pl-5 mt-2 space-y-1.5">
+            <li><strong class="text-white">Dein LuxStage-Server</strong> (lokales Netzwerk oder eigener VPS) — für Show-Daten, Echtzeit-Synchronisation und OSC-Befehle</li>
+            <li><strong class="text-white">Dein EOS-Lichtsteuerpult</strong> (lokales Netzwerk) — für OSC-Steuerungsbefehle</li>
+          </ul>
+          <p class="mt-3">Es besteht keine Verbindung zu externen Servern des App-Entwicklers oder Dritter.</p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">App Store – Datenschutz-Labels (App Privacy)</h2>
+          <p>Im App Store sind folgende Angaben hinterlegt:</p>
+          <div class="mt-3 overflow-x-auto">
+            <table class="w-full text-sm border-collapse">
+              <thead>
+                <tr class="border-b border-white/10 text-left text-gray-500">
+                  <th class="py-2 pr-4 font-medium">Kategorie</th>
+                  <th class="py-2 pr-4 font-medium">Erhebung</th>
+                  <th class="py-2 font-medium">Zweck</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                <tr><td class="py-2 pr-4">Kaufhistorie</td><td class="py-2 pr-4">Durch Apple</td><td class="py-2">App-Store-Betrieb</td></tr>
+                <tr><td class="py-2 pr-4">Gerätekennungen</td><td class="py-2 pr-4">Keine</td><td class="py-2">–</td></tr>
+                <tr><td class="py-2 pr-4">Nutzungsdaten</td><td class="py-2 pr-4">Keine</td><td class="py-2">–</td></tr>
+                <tr><td class="py-2 pr-4">Diagnosedaten</td><td class="py-2 pr-4">Keine</td><td class="py-2">–</td></tr>
+                <tr><td class="py-2 pr-4">Kontaktdaten</td><td class="py-2 pr-4">Keine</td><td class="py-2">–</td></tr>
+                <tr><td class="py-2 pr-4">Fotos</td><td class="py-2 pr-4">Optional, lokal</td><td class="py-2">Nur auf deinen eigenen Server</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-3">
+            <strong class="text-white">Data Not Linked to You</strong> — es werden keine Daten mit deiner Person
+            verknüpft oder an Dritte übermittelt.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Impressum</h2>
+          <p>
+            Das Impressum für den gehosteten Dienst luxstage.app findest du unter
+            <a href="impressum.html" class="text-accent hover:underline">luxstage.app/impressum.html</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Änderungen dieser Datenschutzerklärung</h2>
+          <p>Änderungen werden auf dieser Seite veröffentlicht. Das Datum der letzten Aktualisierung steht oben.</p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Kontakt</h2>
+          <p>
+            Bei Fragen zum Datenschutz:<br/>
+            E-Mail: <a href="mailto:hello@luxstage.app" class="text-accent hover:underline">hello@luxstage.app</a><br/>
+            GitHub: <a href="https://github.com/Plobli/LuxStage" class="text-accent hover:underline" target="_blank" rel="noopener">github.com/Plobli/LuxStage</a>
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 py-10">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2.5 text-sm text-gray-500">
+        <img src="logo.png" alt="LuxStage" class="size-6 rounded-md opacity-80" />
+        LuxStage
+      </div>
+      <p class="text-xs text-gray-700">Web-App & iOS-App für Beleuchtungsmanagement im Theater</p>
+      <div class="flex items-center gap-4 text-xs text-gray-600">
+        <a href="impressum.html" class="hover:text-gray-400 transition-colors">Impressum</a>
+        <a href="datenschutz.html" class="hover:text-gray-400 transition-colors">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(html => { document.getElementById('nav-container').innerHTML = html })
+  </script>
+</body>
+</html>
