@@ -12,7 +12,7 @@ FROM nginx:alpine
 COPY *.html /usr/share/nginx/html/
 COPY *.png /usr/share/nginx/html/
 COPY images /usr/share/nginx/html/images
-COPY nav.html i18n.js /usr/share/nginx/html/
+COPY nav.html /usr/share/nginx/html/
 COPY --from=build /build/styles.css /usr/share/nginx/html/styles.css
 
 EXPOSE 80
