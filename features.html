@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles.css" />
   <script defer src="https://umami.moschu.net/script.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
   <script defer src="https://umami.moschu.net/recorder.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
+  <script defer src="lightbox.js"></script>
 </head>
 <body class="bg-gray-950 text-white font-sans antialiased">
 
@@ -73,21 +74,8 @@
               <p class="mt-1 text-sm text-gray-400">Alle Kreise siehst du tabellarisch, nach Bühnenposition gruppiert. Tippst du eine Kreisnummer, einen Gerätetyp oder eine Notiz, filtert die Tabelle sofort. Vergibst du eine DMX-Adresse aus Versehen doppelt, warnt sie dich noch bevor du weiterarbeitest.</p>
             </div>
           </div>
-          <div class="rounded-xl border border-white/10 bg-gray-950/60 overflow-hidden text-xs">
-            <div class="px-4 py-2.5 border-b border-white/5 flex items-center gap-2 bg-gray-900/50">
-              <svg class="size-3.5 text-gray-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd"/></svg>
-              <span class="text-gray-500 font-mono">PAR</span>
-              <span class="ml-auto text-gray-600">14 Treffer</span>
-            </div>
-            <div class="px-3 py-1.5 border-b border-white/5 flex gap-3 text-gray-600 uppercase tracking-wider font-medium text-[10px]">
-              <span class="w-8">Nr</span><span class="w-12">DMX</span><span class="w-20">Gel</span><span class="flex-1">Gerät</span><span class="flex-1">Bühnenposition</span>
-            </div>
-            <div class="divide-y divide-white/5">
-              <div class="px-3 py-2.5 flex items-center gap-3"><span class="text-accent font-bold w-8">1</span><span class="text-gray-400 font-mono w-12">001</span><span class="w-20 px-2 py-0.5 rounded-full bg-white/10 text-gray-400 text-center text-[10px]">R02</span><span class="text-gray-300 flex-1">PAR 64</span><span class="text-gray-500 flex-1">Portal links</span></div>
-              <div class="px-3 py-2.5 flex items-center gap-3"><span class="text-accent font-bold w-8">2</span><span class="text-gray-400 font-mono w-12">002</span><span class="w-20 px-2 py-0.5 rounded-full bg-white/10 text-gray-400 text-center text-[10px]">L201</span><span class="text-gray-300 flex-1">PAR 64</span><span class="text-gray-500 flex-1">Portal rechts</span></div>
-              <div class="px-3 py-2.5 flex items-center gap-3"><span class="text-accent font-bold w-8">5</span><span class="text-gray-400 font-mono w-12">017</span><span class="w-20 px-2 py-0.5 rounded-full bg-amber-400/10 text-amber-400/80 text-center text-[10px]">R32</span><span class="text-gray-300 flex-1">PAR 64</span><span class="text-gray-500 flex-1">Zug 1 Mitte</span></div>
-              <div class="px-3 py-2.5 flex items-center gap-3"><span class="text-white/25 font-bold w-8">6</span><span class="text-gray-600 font-mono w-12">018</span><span class="w-20 px-2 py-0.5 rounded-full bg-white/5 text-gray-600 text-center text-[10px]">—</span><span class="text-gray-500 flex-1">PAR 64</span><span class="text-gray-600 flex-1">Zug 1 links</span></div>
-            </div>
+          <div class="rounded-xl border border-white/10 overflow-hidden">
+            <img src="images/screenshots/crop-kreisliste.png" alt="Kreisliste in LuxStage" class="w-full h-auto lb-trigger" />
           </div>
         </div>
         <div class="flex flex-col gap-4">
@@ -209,9 +197,14 @@
         <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-balance">Bühnenplan im Browser zeichnen</h2>
         <p class="mt-4 text-gray-400 max-w-2xl">Mit dem Vektor-Editor der Web-App zeichnest du die Spielstätte einmal und vererbst sie an alle Shows. Platziere Kreise als nummerierte Marker und exportiere den Grundriss als PNG.</p>
       </div>
+      <div class="grid gap-4 lg:grid-cols-3 mb-4">
+        <div class="lg:col-span-2 rounded-2xl border border-white/10 overflow-hidden">
+          <img src="images/screenshots/crop-grundriss.png" alt="Grundriss-Editor mit platzierten Kreisen" class="w-full h-auto lb-trigger" />
+        </div>
+        <div class="feat-card flex flex-col justify-center"><div class="feat-card-icon bg-indigo-400/15 mb-4"><svg class="size-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor"><path d="M10 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM1.49 15.326a.78.78 0 0 1-.358-.442 3 3 0 0 1 4.308-3.516 6.484 6.484 0 0 0-1.905 3.959c-.023.222-.014.442.025.654a4.97 4.97 0 0 1-2.07-.655ZM16.44 15.98a4.97 4.97 0 0 0 2.07-.654.78.78 0 0 0 .357-.442 3 3 0 0 0-4.308-3.517 6.484 6.484 0 0 1 1.907 3.96 2.32 2.32 0 0 1-.026.654ZM18 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM5.304 16.19a.844.844 0 0 1-.277-.71 5 5 0 0 1 9.947 0 .843.843 0 0 1-.277.71A6.975 6.975 0 0 1 10 18a6.974 6.974 0 0 1-4.696-1.81Z"/></svg></div><h3 class="font-semibold text-white mb-2">Kreise platzieren</h3><p class="text-sm text-gray-400">Positioniere Kreise als nummerierte Marker auf dem Grundriss, direkt verbunden mit der Kreisliste.</p></div>
+      </div>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <div class="feat-card"><div class="feat-card-icon bg-indigo-400/15 mb-4"><svg class="size-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4Zm.25 14.5h11.5a.25.25 0 0 0 .25-.25V4.25a.25.25 0 0 0-.25-.25H4.25a.25.25 0 0 0-.25.25v11.5c0 .138.112.25.25.25Z" clip-rule="evenodd"/><path d="M8 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg></div><h3 class="font-semibold text-white mb-2">Zeichenwerkzeuge</h3><p class="text-sm text-gray-400">Mit Linien, Rechtecken, Ellipsen und Text zeichnest du die Bühne so genau, wie du sie brauchst.</p></div>
-        <div class="feat-card"><div class="feat-card-icon bg-indigo-400/15 mb-4"><svg class="size-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor"><path d="M10 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM1.49 15.326a.78.78 0 0 1-.358-.442 3 3 0 0 1 4.308-3.516 6.484 6.484 0 0 0-1.905 3.959c-.023.222-.014.442.025.654a4.97 4.97 0 0 1-2.07-.655ZM16.44 15.98a4.97 4.97 0 0 0 2.07-.654.78.78 0 0 0 .357-.442 3 3 0 0 0-4.308-3.517 6.484 6.484 0 0 1 1.907 3.96 2.32 2.32 0 0 1-.026.654ZM18 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM5.304 16.19a.844.844 0 0 1-.277-.71 5 5 0 0 1 9.947 0 .843.843 0 0 1-.277.71A6.975 6.975 0 0 1 10 18a6.974 6.974 0 0 1-4.696-1.81Z"/></svg></div><h3 class="font-semibold text-white mb-2">Kreise platzieren</h3><p class="text-sm text-gray-400">Positioniere Kreise als nummerierte Marker auf dem Grundriss, direkt verbunden mit der Kreisliste.</p></div>
         <div class="feat-card"><div class="feat-card-icon bg-indigo-400/15 mb-4"><svg class="size-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M1 5.25A2.25 2.25 0 0 1 3.25 3h13.5A2.25 2.25 0 0 1 19 5.25v9.5A2.25 2.25 0 0 1 16.75 17H3.25A2.25 2.25 0 0 1 1 14.75v-9.5Zm2.25-.75a.75.75 0 0 0-.75.75v9.5c0 .414.336.75.75.75h13.5a.75.75 0 0 0 .75-.75v-9.5a.75.75 0 0 0-.75-.75H3.25Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">Hintergrundbild</h3><p class="text-sm text-gray-400">Lade deinen bestehenden Bühnenplan als Bild hoch und zeichne die Kreise einfach darüber.</p></div>
         <div class="feat-card"><div class="feat-card-icon bg-indigo-400/15 mb-4"><svg class="size-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z"/><path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z"/></svg></div><h3 class="font-semibold text-white mb-2">PNG-Export</h3><p class="text-sm text-gray-400">Exportiere den fertigen Grundriss als PNG, für Unterlagen, Präsentationen oder den Ausdruck.</p></div>
         <div class="feat-card"><div class="feat-card-icon bg-green-400/15 mb-4"><svg class="size-5 text-green-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75H10a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">Vererbung aus Vorlage</h3><p class="text-sm text-gray-400">Dein Vorlage-Grundriss wird automatisch in alle neuen Shows übernommen. Einmal zeichnen, immer verwenden.</p></div>
@@ -234,13 +227,8 @@
             <h3 class="text-lg font-semibold text-white">Rich-Text-Editor mit Markdown</h3>
           </div>
           <p class="text-sm text-gray-400 mb-6">Der WYSIWYG-Editor formatiert deinen Text ganz normal per Klick, von Fettdruck über Überschriften bis zu eingebetteten Bildern. Schreibst du lieber Markdown direkt, geht das genauso gut.</p>
-          <div class="rounded-xl border border-white/10 bg-gray-950/60 p-5 font-mono text-xs text-gray-400 leading-relaxed">
-            <div class="text-orange-400/70 font-semibold">## Frontbrücke</div>
-            <div class="mt-1">Abstand Bühnenkante: <span class="text-gray-200">2,40 m</span></div>
-            <div class="mt-1 text-gray-600">– Kabel über Gasse links führen</div>
-            <div class="mt-1 text-gray-600">– Dimmer D7 bitte nur bis 80 %</div>
-            <div class="mt-3 text-orange-400/70 font-semibold">## Besonderheiten</div>
-            <div class="mt-1">Brücke 3 <span class="text-rose-400">nicht begehbar</span> (Statik)</div>
+          <div class="rounded-xl border border-white/10 overflow-hidden">
+            <img src="images/screenshots/crop-aufbau.png" alt="Aufbaunotizen einer Show" class="w-full h-auto lb-trigger" />
           </div>
         </div>
         <div class="flex flex-col gap-4">
@@ -273,6 +261,9 @@
         <p class="text-sm font-semibold text-sky-400 mb-3">Fotodokumentation</p>
         <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-balance">Bilder sagen mehr als der Kreisplan</h2>
         <p class="mt-4 text-gray-400 max-w-2xl">Ob Aufbausituation, Rigg-Detail oder eine knifflige Kabelführung: Fotografiere es direkt in der App, beschrifte es und ordne es einem Kreis zu. Beim nächsten Einleuchten hast du es sofort zur Hand.</p>
+      </div>
+      <div class="rounded-2xl border border-white/10 overflow-hidden mb-4">
+        <img src="images/screenshots/crop-fotos.png" alt="Foto-Galerie einer Produktion" class="w-full h-auto lb-trigger" />
       </div>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <div class="feat-card"><div class="feat-card-icon bg-sky-400/15 mb-4"><svg class="size-5 text-sky-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M1 8a2 2 0 0 1 2-2h.93a2 2 0 0 0 1.664-.89l.812-1.22A2 2 0 0 1 8.07 3h3.86a2 2 0 0 1 1.664.89l.812 1.22A2 2 0 0 0 16.07 6H17a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8Zm13.5 3a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM10 14a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">In-App Kamera (iOS)</h3><p class="text-sm text-gray-400">Nimm Fotos direkt aus der App heraus auf, ohne erst in die Galerie zu wechseln. Sie werden automatisch mit der Produktion verknüpft und auf dem Server gespeichert.</p></div>
@@ -317,11 +308,8 @@
           </div>
           <p class="text-sm font-medium text-white mb-3">PDF-Export</p>
           <p class="text-sm text-gray-400 mb-6">Mit einem Klick bekommst du einen druckfertigen Bericht, für die Bühne, die Technikabteilung oder die Produzentenmappe.</p>
-          <div class="rounded-xl border border-white/10 bg-gray-950/60 divide-y divide-white/5 text-sm">
-            <div class="px-4 py-3 flex items-center gap-3"><svg class="size-4 text-blue-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/></svg><div><span class="text-white font-medium">Titelseite</span><span class="text-gray-500 ml-2 text-xs">Produktionsname, Datum, Spielstätte</span></div></div>
-            <div class="px-4 py-3 flex items-center gap-3"><svg class="size-4 text-blue-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/></svg><div><span class="text-white font-medium">Kreisliste</span><span class="text-gray-500 ml-2 text-xs">Sortiert nach Bühnenposition & Kreis, mit DMX, Gerät, Gel, Notizen</span></div></div>
-            <div class="px-4 py-3 flex items-center gap-3"><svg class="size-4 text-blue-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/></svg><div><span class="text-white font-medium">Aufbaunotizen</span><span class="text-gray-500 ml-2 text-xs">Alle Sektionen inkl. strukturierter Felder</span></div></div>
-            <div class="px-4 py-3 flex items-center gap-3"><svg class="size-4 text-blue-400 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/></svg><div><span class="text-white font-medium">Fotogalerie</span><span class="text-gray-500 ml-2 text-xs">Alle Produktionsfotos eingebettet</span></div></div>
+          <div class="rounded-xl border border-white/10 overflow-hidden">
+            <img src="images/screenshots/crop-export.png" alt="Export-Menü mit PDF- und CSV-Export" class="w-full h-auto lb-trigger" />
           </div>
         </div>
       </div>
@@ -362,14 +350,8 @@
             <li class="flex items-start gap-3 text-sm text-gray-300"><svg class="size-4 text-green-400 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd"/></svg><span><span class="text-white font-medium">OSC-Konfiguration</span> — <span>IP-Adresse und Port des Pultes</span></span></li>
           </ul>
         </div>
-        <div class="rounded-2xl border border-white/10 bg-gray-900 p-8">
-          <h3 class="font-semibold text-white mb-4">Deine Spielstätten</h3>
-          <div class="space-y-3">
-            <div class="flex items-center justify-between rounded-xl bg-gray-950/60 border border-white/10 px-4 py-3"><div><p class="text-sm font-medium text-white">Großes Haus</p><p class="text-xs text-gray-500">248 Kreise · 3 Sektionen</p></div><span class="text-xs rounded-full border border-green-400/30 bg-green-400/10 px-2.5 py-1 text-green-400">aktiv</span></div>
-            <div class="flex items-center justify-between rounded-xl bg-gray-950/60 border border-white/10 px-4 py-3"><div><p class="text-sm font-medium text-white">Kammerspiele</p><p class="text-xs text-gray-500">96 Kreise · 2 Sektionen</p></div><span class="text-xs rounded-full border border-green-400/30 bg-green-400/10 px-2.5 py-1 text-green-400">aktiv</span></div>
-            <div class="flex items-center justify-between rounded-xl bg-gray-950/60 border border-white/10 px-4 py-3"><div><p class="text-sm font-medium text-white">Studio</p><p class="text-xs text-gray-500">48 Kreise · 2 Sektionen</p></div><span class="text-xs rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-gray-500">aktiv</span></div>
-            <div class="flex items-center justify-between rounded-xl border border-dashed border-white/10 px-4 py-3"><span class="text-sm text-gray-600">+ Neue Spielstätte</span></div>
-          </div>
+        <div class="rounded-2xl border border-white/10 overflow-hidden">
+          <img src="images/screenshots/crop-vorlagen.png" alt="Übersicht der Spielstätten-Vorlagen" class="w-full h-auto lb-trigger" />
         </div>
       </div>
     </div>
@@ -401,7 +383,7 @@
         <p class="mt-4 text-gray-400 max-w-2xl">Jeder Zustand deiner Show wird automatisch gesichert, und bei Bedarf stellst du ihn mit einem Klick wieder her. Für den Fall der Fälle, und einfach zur Beruhigung.</p>
       </div>
       <div class="grid gap-6 lg:grid-cols-3">
-        <div class="feat-card"><div class="feat-card-icon bg-gray-700/50 mb-4"><svg class="size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">Automatischer Versionsverlauf</h3><p class="text-sm text-gray-400 mb-4">Alle 10 Minuten speichert LuxStage einen Snapshot des Show-Zustands. In der Timeline mit Datum, Uhrzeit und Nutzer-Info stellst du jeden älteren Zustand wieder her.</p><div class="space-y-2"><div class="flex items-center gap-3 text-xs"><div class="size-1.5 rounded-full bg-accent"></div><span class="text-gray-300">Heute, 14:32</span><span class="ml-auto text-gray-600">184 Kreise</span></div><div class="flex items-center gap-3 text-xs"><div class="size-1.5 rounded-full bg-white/20"></div><span class="text-gray-500">Heute, 09:15</span><span class="ml-auto text-gray-600">181 Kreise</span></div><div class="flex items-center gap-3 text-xs"><div class="size-1.5 rounded-full bg-white/20"></div><span class="text-gray-500">Gestern, 18:44</span><span class="ml-auto text-gray-600">177 Kreise</span></div></div></div>
+        <div class="feat-card"><div class="feat-card-icon bg-gray-700/50 mb-4"><svg class="size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">Automatischer Versionsverlauf</h3><p class="text-sm text-gray-400 mb-4">Alle 10 Minuten speichert LuxStage einen Snapshot des Show-Zustands. In der Timeline mit Datum, Uhrzeit und Nutzer-Info stellst du jeden älteren Zustand wieder her.</p><div class="rounded-lg border border-white/10 overflow-hidden"><img src="images/screenshots/crop-verlauf.png" alt="Versionsverlauf einer Show" class="w-full h-auto lb-trigger" /></div></div>
         <div class="feat-card"><div class="feat-card-icon bg-blue-400/15 mb-4"><svg class="size-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z"/><path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z"/></svg></div><h3 class="font-semibold text-white mb-2">Vollständiges Backup</h3><p class="text-sm text-gray-400 mb-4">Lade alle Daten, Datenbank und Fotos, als ZIP-Datei herunter. Der Zeitstempel steht automatisch im Dateinamen. Praktisch für externe Archivierung oder vor größeren Änderungen.</p><div class="rounded-lg bg-gray-950/60 border border-white/10 px-3 py-2 font-mono text-xs text-gray-500">backup_2026-04-09_1432.zip</div></div>
         <div class="feat-card"><div class="feat-card-icon bg-green-400/15 mb-4"><svg class="size-5 text-green-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Zm1.23-3.723a.75.75 0 0 0 .219-.53V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.448.389A5.5 5.5 0 0 1 13.89 6.11l.311.31h-2.432a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .53-.219Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">Wiederherstellen</h3><p class="text-sm text-gray-400">Stelle eine frühere ZIP-Datei wieder her. LuxStage prüft sie vor der Anwendung, ein komplettes Rollback ist jederzeit möglich.</p></div>
       </div>
