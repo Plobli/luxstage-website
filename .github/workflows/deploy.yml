@@ -43,6 +43,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Version im Schema Jahr.Monat.N (N = N-ter Commit auf main im Monat, UTC).
+      # Das Cockpit (tools/luxstage.py) rechnet nach derselben Regel.
+      - name: Version berechnen
+        id: ver
+        env:
+          TZ: UTC
+        run: |
+          YM=$(git log -1 --format=%cd --date=format-local:%Y-%m)
+          Y=${YM%-*}; M=${YM#*-}
+          N=$(git rev-list --count --first-parent --since="$Y-$M-01T00:00:00Z" HEAD)
+          V="$((10#$Y)).$((10#$M)).$N"
+          echo "version=$V" >> "$GITHUB_OUTPUT"
+          echo "Version: $V"
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
@@ -58,7 +74,10 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=raw,value=latest
+            type=raw,value=${{ steps.ver.outputs.version }}
             type=sha,format=short
+          labels: |
+            org.opencontainers.image.version=${{ steps.ver.outputs.version }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -70,5 +89,7 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            APP_VERSION=${{ steps.ver.outputs.version }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
