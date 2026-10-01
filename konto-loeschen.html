@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konto &amp; Daten löschen – LuxStage</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://umami.moschu.net/script.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
+  <script defer src="https://umami.moschu.net/recorder.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
+</head>
+<body class="bg-gray-950 text-white font-sans antialiased">
+
+  <div id="nav-container"></div>
+
+  <section class="relative overflow-hidden pt-32 pb-24 grid-bg">
+    <div class="relative mx-auto max-w-3xl px-6 lg:px-8">
+      <h1 class="text-4xl font-semibold tracking-tight text-white mb-10">Konto &amp; Daten löschen</h1>
+
+      <div class="text-gray-400 space-y-8 leading-relaxed">
+
+        <section>
+          <p>
+            Diese Seite gilt für die LuxStage-Apps (iOS und Android) sowie die Web-App auf luxstage.app.
+            In LuxStage arbeitet ihr als Team: Konten und Daten gehören zu einem Team. Die Löschung wird deshalb
+            für das ganze Team beantragt.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Löschung beantragen</h2>
+          <ol class="list-decimal pl-5 space-y-1.5">
+            <li>In der Web-App auf <a href="https://luxstage.app" class="text-accent hover:underline">luxstage.app</a> anmelden.</li>
+            <li>Einstellungen öffnen und zum Konto wechseln.</li>
+            <li>„Team löschen“ wählen und mit deinem Passwort bestätigen.</li>
+            <li>Wir prüfen die Anfrage, melden uns bei dir und löschen das Team.</li>
+          </ol>
+          <p class="mt-3">
+            Du kommst nicht mehr in dein Konto oder hast keinen Zugriff auf die Web-App? Schreib uns von der
+            E-Mail-Adresse deines Kontos an
+            <a href="mailto:hello@luxstage.app?subject=L%C3%B6schung%20meines%20LuxStage-Kontos" class="text-accent hover:underline">hello@luxstage.app</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Was wird gelöscht?</h2>
+          <ul class="list-disc pl-5 space-y-1.5">
+            <li>alle Benutzerkonten des Teams (E-Mail-Adresse, Passwort, Einstellungen)</li>
+            <li>alle Shows mit Kreislisten, Kanälen, Notizen und Einstellungen</li>
+            <li>alle hochgeladenen Fotos, Grundrisse und Dokumente</li>
+            <li>alle Sicherungskopien (Backups) des Teams</li>
+          </ul>
+          <p class="mt-3">Die Löschung ist endgültig und kann nicht rückgängig gemacht werden.</p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Was bleibt, und wie lange?</h2>
+          <p>
+            Die Löschung erfolgt nach Prüfung der Anfrage, in der Regel innerhalb weniger Tage und spätestens
+            innerhalb von 30 Tagen. Danach sind alle oben genannten Daten vollständig entfernt. Wir bewahren
+            darüber hinaus keine Daten auf, außer wir sind gesetzlich dazu verpflichtet (zum Beispiel
+            Rechnungsdaten bei kostenpflichtigen Teams, bis zu 10 Jahre).
+          </p>
+          <p class="mt-3">
+            Daten, die nur lokal auf deinem Gerät liegen, entfernst du durch Löschen der App.
+          </p>
+        </section>
+
+        <section>
+          <p class="text-xs text-gray-600">
+            Weitere Informationen findest du in der <a href="datenschutz.html" class="hover:text-gray-400 underline">Datenschutzerklärung</a>.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 py-10">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2.5 text-sm text-gray-500">
+        <img src="logo.png" alt="LuxStage" class="size-6 rounded-md opacity-80" />
+        LuxStage
+      </div>
+      <p class="text-xs text-gray-700">Web-App, iOS-App & Android-App für Beleuchtungsmanagement im Theater</p>
+      <div class="flex items-center gap-4 text-xs text-gray-600">
+        <a href="impressum.html" class="hover:text-gray-400 transition-colors">Impressum</a>
+        <a href="datenschutz.html" class="hover:text-gray-400 transition-colors">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(html => { document.getElementById('nav-container').innerHTML = html })
+  </script>
+</body>
+</html>
