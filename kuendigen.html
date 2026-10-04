@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vertrag kündigen – LuxStage</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://umami.moschu.net/script.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
+  <script defer src="https://umami.moschu.net/recorder.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
+</head>
+<body class="bg-gray-950 text-white font-sans antialiased">
+
+  <div id="nav-container"></div>
+
+  <section class="relative overflow-hidden pt-32 pb-24 grid-bg">
+    <div class="relative mx-auto max-w-3xl px-6 lg:px-8">
+      <h1 class="text-4xl font-semibold tracking-tight text-white mb-10">Verträge hier kündigen</h1>
+
+      <div class="text-gray-400 space-y-8 leading-relaxed">
+
+        <p>Hier kündigst du das Abo deines LuxStage-Teams. Du brauchst dafür keine Anmeldung. Das Abo endet zum Ende des bezahlten Zeitraums, bis dahin kannst du LuxStage weiter nutzen. Danach bleibt dein Team lesbar, deine Daten bleiben erhalten.</p>
+
+        <form id="cancel-form" class="space-y-5 rounded-xl border border-white/10 bg-white/5 p-6">
+          <div>
+            <label for="teamId" class="block text-sm font-medium text-white mb-1">Team-Kürzel (Vertrag)</label>
+            <input id="teamId" name="teamId" required autocomplete="off" class="w-full rounded-lg border border-white/10 bg-gray-900 px-3 py-2 text-white" placeholder="z. B. stadttheater" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-white mb-1">E-Mail-Adresse des Teams</label>
+            <input id="email" name="email" type="email" required autocomplete="email" class="w-full rounded-lg border border-white/10 bg-gray-900 px-3 py-2 text-white" />
+            <p class="mt-1 text-xs text-gray-500">Die E-Mail-Adresse, mit der das Team registriert wurde. Die Bestätigung geht an diese Adresse.</p>
+          </div>
+          <div>
+            <label for="name" class="block text-sm font-medium text-white mb-1">Dein Name</label>
+            <input id="name" name="name" required autocomplete="name" class="w-full rounded-lg border border-white/10 bg-gray-900 px-3 py-2 text-white" />
+          </div>
+          <p class="text-sm">Art der Kündigung: ordentliche Kündigung zum nächstmöglichen Zeitpunkt (Ende des laufenden Abrechnungszeitraums).</p>
+          <p id="cancel-error" class="hidden rounded-lg border border-red-500/40 bg-red-500/10 px-3 py-2 text-sm text-red-400" role="alert"></p>
+          <button id="cancel-submit" type="submit" class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent/90 transition-colors disabled:opacity-50">Jetzt kündigen</button>
+        </form>
+
+        <div id="cancel-done" class="hidden space-y-3 rounded-xl border border-emerald-500/40 bg-emerald-500/10 p-6 text-emerald-300" role="status">
+          <h2 class="text-lg font-semibold text-white">Deine Kündigung ist eingegangen</h2>
+          <p>Vertrag: LuxStage Team <span id="done-team" class="font-semibold text-white"></span></p>
+          <p>Eingegangen am: <span id="done-at" class="font-semibold text-white"></span> Uhr</p>
+          <p>Das Abo endet am: <span id="done-ends" class="font-semibold text-white"></span></p>
+          <p>Eine Bestätigung mit diesen Angaben haben wir an deine E-Mail-Adresse geschickt. Du kannst diese Seite auch drucken oder als PDF speichern.</p>
+          <button type="button" onclick="window.print()" class="rounded-lg border border-white/20 px-4 py-2 text-sm text-white hover:bg-white/10">Seite drucken oder speichern</button>
+        </div>
+
+        <p class="text-sm">Du willst das Team samt aller Daten löschen? Das geht über <a href="konto-loeschen.html" class="underline text-white">Konto löschen</a>.</p>
+
+        <script>
+          const form = document.getElementById('cancel-form')
+          const err = document.getElementById('cancel-error')
+          const fmt = ms => new Date(ms).toLocaleString('de-DE', { timeZone: 'Europe/Berlin', dateStyle: 'long', timeStyle: 'short' })
+          form.addEventListener('submit', async e => {
+            e.preventDefault()
+            err.classList.add('hidden')
+            const btn = document.getElementById('cancel-submit')
+            btn.disabled = true
+            try {
+              const res = await fetch('/api/cancel', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ teamId: form.teamId.value, email: form.email.value, name: form.name.value }),
+              })
+              const data = await res.json().catch(() => ({}))
+              if (!res.ok) throw new Error(data.error || 'Die Kündigung konnte nicht verarbeitet werden. Bitte schreib an hello@luxstage.app.')
+              document.getElementById('done-team').textContent = data.teamId
+              document.getElementById('done-at').textContent = fmt(data.requestedAt)
+              document.getElementById('done-ends').textContent = data.endsAt ? fmt(data.endsAt) + ' Uhr' : 'zum Ende des laufenden Abrechnungszeitraums'
+              form.classList.add('hidden')
+              document.getElementById('cancel-done').classList.remove('hidden')
+            } catch (ex) {
+              err.textContent = ex.message
+              err.classList.remove('hidden')
+              btn.disabled = false
+            }
+          })
+        </script>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 py-10">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2.5 text-sm text-gray-500">
+        <img src="logo.png" alt="LuxStage" class="size-6 rounded-md opacity-80" />
+        LuxStage
+      </div>
+      <p class="text-xs text-gray-700">Web-App, iOS-App & Android-App für Beleuchtungsmanagement im Theater · Version __APP_VERSION__</p>
+      <div class="flex items-center gap-4 text-xs text-gray-600">
+        <a href="impressum.html" class="hover:text-gray-400 transition-colors">Impressum</a>
+        <a href="datenschutz.html" class="hover:text-gray-400 transition-colors">Datenschutz</a>
+        <a href="agb.html" class="hover:text-gray-400 transition-colors">AGB</a>
+        <a href="avv.html" class="hover:text-gray-400 transition-colors">AVV</a>
+        <a href="kuendigen.html" class="hover:text-gray-400 transition-colors">Verträge hier kündigen</a>
+        <a href="konto-loeschen.html" class="hover:text-gray-400 transition-colors">Konto löschen</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(html => { document.getElementById('nav-container').innerHTML = html })
+  </script>
+</body>
+</html>
