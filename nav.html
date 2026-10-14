@@ -1,25 +1,48 @@
 <!-- NAV -->
-<header class="fixed top-0 inset-x-0 z-50 border-b border-white/5 bg-gray-950/80 backdrop-blur-md">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8 flex items-center justify-between h-16">
-    <a href="index.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
-      <img src="logo.png" alt="LuxStage" class="size-8 rounded-lg" />
+<header class="fixed top-0 inset-x-0 z-50 border-b border-white/5 bg-gray-950/85 backdrop-blur-md">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 gap-4">
+    <a href="index.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity shrink-0">
+      <img src="logo.png" alt="" width="32" height="32" class="size-8 rounded-lg" />
       <span class="text-base font-semibold">LuxStage</span>
     </a>
-    <nav class="hidden md:flex items-center gap-8 text-sm text-gray-400">
-      <a href="index.html#apps" class="hover:text-white transition-colors">Apps</a>
-      <a href="index.html#screenshots" class="hover:text-white transition-colors">Blick in die App</a>
-      <a href="features.html" class="hover:text-white transition-colors">Alle Features</a>
+    <nav class="hidden md:flex items-center gap-7 text-sm text-gray-300" aria-label="Hauptnavigation">
+      <a href="features.html" class="hover:text-white transition-colors">Funktionen</a>
+      <a href="index.html#fuer-wen" class="hover:text-white transition-colors">Für wen</a>
+      <a href="index.html#preise" class="hover:text-white transition-colors">Preise</a>
       <a href="index.html#faq" class="hover:text-white transition-colors">FAQ</a>
-      <a href="index.html#discord" class="hover:text-white transition-colors">Community</a>
+      <a href="updates.html" class="hover:text-white transition-colors">Updates</a>
     </nav>
-    <div class="hidden md:flex items-center gap-3">
-      <a href="https://discord.gg/H8ZMSXyJC" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-lg bg-[#5865F2] px-4 py-2 text-sm font-semibold text-white hover:bg-[#5865F2]/90 transition-colors">
-        <svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
-        Discord
+    <div class="flex items-center gap-2">
+      <a href="https://discord.gg/H8ZMSXyJC" target="_blank" rel="noopener" aria-label="LuxStage auf Discord" data-umami-event="Discord" data-umami-event-ort="Header" class="hidden sm:inline-flex items-center justify-center size-9 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors">
+        <svg class="size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
       </a>
-      <a href="index.html#kontakt" class="inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent/90 transition-colors">
-        Kontakt
-      </a>
+      <a href="https://luxstage.app/register" data-umami-event="Team anlegen" data-umami-event-ort="Header" class="inline-flex items-center rounded-lg bg-accent px-3.5 sm:px-4 py-2 text-sm font-semibold text-white hover:bg-accent/90 transition-colors whitespace-nowrap">Team anlegen</a>
+      <button type="button" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen" class="md:hidden inline-flex items-center justify-center size-9 rounded-lg text-gray-300 hover:bg-white/5">
+        <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </div>
+  <nav id="nav-menu" hidden class="md:hidden border-t border-white/5 bg-gray-950/95 px-4 py-3 text-base" aria-label="Mobile Navigation">
+    <a href="features.html" class="block rounded-lg px-3 py-3 text-gray-200 hover:bg-white/5">Funktionen</a>
+    <a href="index.html#fuer-wen" class="block rounded-lg px-3 py-3 text-gray-200 hover:bg-white/5">Für wen</a>
+    <a href="index.html#preise" class="block rounded-lg px-3 py-3 text-gray-200 hover:bg-white/5">Preise</a>
+    <a href="index.html#faq" class="block rounded-lg px-3 py-3 text-gray-200 hover:bg-white/5">FAQ</a>
+    <a href="updates.html" class="block rounded-lg px-3 py-3 text-gray-200 hover:bg-white/5">Updates</a>
+    <a href="https://discord.gg/H8ZMSXyJC" target="_blank" rel="noopener" class="block rounded-lg px-3 py-3 text-gray-200 hover:bg-white/5">Discord</a>
+    <a href="index.html#kontakt" class="block rounded-lg px-3 py-3 text-gray-200 hover:bg-white/5">Kontakt</a>
+  </nav>
 </header>
+<script>
+  (function () {
+    var b = document.getElementById('nav-toggle'), m = document.getElementById('nav-menu');
+    if (!b || !m) return;
+    function set(open) {
+      m.hidden = !open;
+      b.setAttribute('aria-expanded', String(open));
+      b.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    }
+    b.addEventListener('click', function () { set(m.hidden); });
+    m.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+  })();
+</script>

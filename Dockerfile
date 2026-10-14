@@ -3,18 +3,16 @@ WORKDIR /build
 COPY package.json package-lock.json ./
 RUN npm ci --no-audit --no-fund
 COPY src ./src
-COPY *.html ./
+COPY tools ./tools
+COPY *.html *.js *.png *.txt *.xml ./
+COPY fonts ./fonts
+COPY images ./images
+# Tailwind-CSS bauen und Navigation in die Seiten einsetzen (Ergebnis: dist/)
 RUN npm run build
 
 FROM nginx:alpine
-
-# Copy website files to nginx
-COPY *.html /usr/share/nginx/html/
-COPY *.png /usr/share/nginx/html/
-COPY images /usr/share/nginx/html/images
-COPY nav.html /usr/share/nginx/html/
-COPY lightbox.js /usr/share/nginx/html/lightbox.js
-COPY --from=build /build/styles.css /usr/share/nginx/html/styles.css
+COPY default.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /build/dist /usr/share/nginx/html
 ARG APP_VERSION=dev
 RUN sed -i "s/__APP_VERSION__/${APP_VERSION}/g" /usr/share/nginx/html/*.html
 

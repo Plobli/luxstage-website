@@ -3,13 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Features – LuxStage</title>
-  <meta name="description" content="Alle Features von LuxStage: Kreisverwaltung, Aufbaudokumentation, OSC-Steuerung, Einleuchten, Fotodokumentation, PDF-Export, Echtzeit-Sync und mehr." />
+  <title>Funktionen – LuxStage</title>
+  <meta name="description" content="Alle Funktionen von LuxStage: Kreisverwaltung, Aufbaudokumentation, Pultsteuerung per OSC, Einleuchten, Fotodokumentation, PDF-Export und Echtzeit-Sync." />
+  <link rel="canonical" href="https://luxstage.app/features.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LuxStage" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:title" content="Funktionen – LuxStage" />
+  <meta property="og:description" content="Alle Funktionen von LuxStage: Kreisverwaltung, Aufbaudokumentation, Pultsteuerung per OSC, Einleuchten, Fotodokumentation, PDF-Export und Echtzeit-Sync." />
+  <meta property="og:url" content="https://luxstage.app/features.html" />
+  <meta property="og:image" content="https://luxstage.app/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Funktionen – LuxStage" />
+  <meta name="twitter:description" content="Alle Funktionen von LuxStage: Kreisverwaltung, Aufbaudokumentation, Pultsteuerung per OSC, Einleuchten, Fotodokumentation, PDF-Export und Echtzeit-Sync." />
+  <meta name="twitter:image" content="https://luxstage.app/og-image.png" />
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="logo.png" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="https://umami.moschu.net/script.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
   <script defer src="https://umami.moschu.net/recorder.js" data-website-id="ab4c6ea3-8423-4402-a3b3-a54149f5bb04"></script>
   <script defer src="lightbox.js"></script>
+  <script defer src="site.js"></script>
 </head>
 <body class="bg-gray-950 text-white font-sans antialiased">
 
@@ -75,7 +89,7 @@
             </div>
           </div>
           <div class="rounded-xl border border-white/10 overflow-hidden">
-            <img src="images/screenshots/crop-kreisliste.png?v=2026-10" alt="Kreisliste in LuxStage" class="w-full h-auto lb-trigger" />
+            <img src="images/screenshots/crop-kreisliste-800.webp" srcset="images/screenshots/crop-kreisliste-800.webp 800w, images/screenshots/crop-kreisliste-1600.webp 1600w" sizes="(min-width:1024px) 40vw, 100vw" width="2368" height="1000" alt="Kreisliste in LuxStage" class="w-full h-auto lb-trigger" loading="lazy" decoding="async" />
           </div>
         </div>
         <div class="flex flex-col gap-4">
@@ -123,7 +137,7 @@
         <div class="rounded-2xl border border-white/10 bg-gray-900 p-8">
           <div class="flex items-center gap-3 mb-6">
             <div class="inline-flex items-center justify-center size-10 rounded-xl bg-rose-400/15"><svg class="size-5 text-rose-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z" clip-rule="evenodd"/></svg></div>
-            <h3 class="text-lg font-semibold text-white">OSC-Steuerung (ETC EOS)</h3>
+            <h3 class="text-lg font-semibold text-white">OSC-Steuerung (ETC Eos)</h3>
           </div>
           <p class="text-sm text-gray-400 mb-6">Steuere das Pult direkt aus der App. Ohne extra Hardware, ohne Umwege.</p>
           <div class="space-y-4">
@@ -149,7 +163,7 @@
             </div>
             <div class="rounded-xl bg-gray-950/60 border border-white/10 p-4">
               <p class="text-xs font-semibold text-rose-400 mb-2">Konfiguration</p>
-              <p class="text-xs text-gray-400">Pro Spielstätte einstellbar: IP-Adresse, OSC-Port (Standard 8000), EOS-User-ID. Speicher und lade deine Konfigurationen.</p>
+              <p class="text-xs text-gray-400">Pro Spielstätte einstellbar: IP-Adresse, OSC-Port (Standard 8000), Eos-User-ID. Speicher und lade deine Konfigurationen.</p>
             </div>
           </div>
         </div>
@@ -199,7 +213,7 @@
       </div>
       <div class="grid gap-4 lg:grid-cols-3 mb-4">
         <div class="lg:col-span-2 rounded-2xl border border-white/10 overflow-hidden">
-          <img src="images/screenshots/crop-grundriss.png?v=2026-10" alt="Zeichnungs-Editor mit platzierten Kreisen" class="w-full h-auto lb-trigger" />
+          <img src="images/screenshots/crop-grundriss-800.webp" srcset="images/screenshots/crop-grundriss-800.webp 800w, images/screenshots/crop-grundriss-1600.webp 1600w" sizes="(min-width:1024px) 40vw, 100vw" width="2368" height="1440" alt="Zeichnungs-Editor mit platzierten Kreisen" class="w-full h-auto lb-trigger" loading="lazy" decoding="async" />
         </div>
         <div class="feat-card flex flex-col justify-center"><div class="feat-card-icon bg-indigo-400/15 mb-4"><svg class="size-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor"><path d="M10 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM1.49 15.326a.78.78 0 0 1-.358-.442 3 3 0 0 1 4.308-3.516 6.484 6.484 0 0 0-1.905 3.959c-.023.222-.014.442.025.654a4.97 4.97 0 0 1-2.07-.655ZM16.44 15.98a4.97 4.97 0 0 0 2.07-.654.78.78 0 0 0 .357-.442 3 3 0 0 0-4.308-3.517 6.484 6.484 0 0 1 1.907 3.96 2.32 2.32 0 0 1-.026.654ZM18 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM5.304 16.19a.844.844 0 0 1-.277-.71 5 5 0 0 1 9.947 0 .843.843 0 0 1-.277.71A6.975 6.975 0 0 1 10 18a6.974 6.974 0 0 1-4.696-1.81Z"/></svg></div><h3 class="font-semibold text-white mb-2">Kreise platzieren</h3><p class="text-sm text-gray-400">Positioniere Kreise als nummerierte Marker auf der Zeichnung, direkt verbunden mit der Kreisliste.</p></div>
       </div>
@@ -228,7 +242,7 @@
           </div>
           <p class="text-sm text-gray-400 mb-6">Der WYSIWYG-Editor formatiert deinen Text ganz normal per Klick, von Fettdruck über Überschriften bis zu eingebetteten Bildern. Schreibst du lieber Markdown direkt, geht das genauso gut.</p>
           <div class="rounded-xl border border-white/10 overflow-hidden">
-            <img src="images/screenshots/crop-aufbau.png?v=2026-10" alt="Aufbaunotizen einer Show" class="w-full h-auto lb-trigger" />
+            <img src="images/screenshots/crop-aufbau-800.webp" srcset="images/screenshots/crop-aufbau-800.webp 800w, images/screenshots/crop-aufbau-1600.webp 1600w" sizes="(min-width:1024px) 40vw, 100vw" width="2368" height="640" alt="Aufbaunotizen einer Show" class="w-full h-auto lb-trigger" loading="lazy" decoding="async" />
           </div>
         </div>
         <div class="flex flex-col gap-4">
@@ -263,7 +277,7 @@
         <p class="mt-4 text-gray-400 max-w-2xl">Ob Aufbausituation, Rigg-Detail oder eine knifflige Kabelführung: Fotografiere es direkt in der App, beschrifte es und ordne es einem Kreis zu. Beim nächsten Einleuchten hast du es sofort zur Hand.</p>
       </div>
       <div class="rounded-2xl border border-white/10 overflow-hidden mb-4">
-        <img src="images/screenshots/crop-fotos.png?v=2026-10" alt="Foto-Galerie einer Produktion" class="w-full h-auto lb-trigger" />
+        <img src="images/screenshots/crop-fotos-800.webp" srcset="images/screenshots/crop-fotos-800.webp 800w, images/screenshots/crop-fotos-1600.webp 1600w" sizes="(min-width:1024px) 40vw, 100vw" width="2368" height="820" alt="Foto-Galerie einer Produktion" class="w-full h-auto lb-trigger" loading="lazy" decoding="async" />
       </div>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <div class="feat-card"><div class="feat-card-icon bg-sky-400/15 mb-4"><svg class="size-5 text-sky-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M1 8a2 2 0 0 1 2-2h.93a2 2 0 0 0 1.664-.89l.812-1.22A2 2 0 0 1 8.07 3h3.86a2 2 0 0 1 1.664.89l.812 1.22A2 2 0 0 0 16.07 6H17a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8Zm13.5 3a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM10 14a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">In-App Kamera (iOS)</h3><p class="text-sm text-gray-400">Nimm Fotos direkt aus der App heraus auf, ohne erst in die Galerie zu wechseln. Sie werden automatisch mit der Produktion verknüpft und auf dem Server gespeichert.</p></div>
@@ -290,7 +304,7 @@
           <div class="space-y-5">
             <div class="flex items-start gap-4 pb-5 border-b border-white/5">
               <div class="size-9 rounded-xl bg-amber-400/15 flex items-center justify-center shrink-0"><svg class="size-4 text-amber-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-11.25a.75.75 0 0 0-1.5 0v4.59L7.3 9.24a.75.75 0 0 0-1.1 1.02l3.25 3.5a.75.75 0 0 0 1.1 0l3.25-3.5a.75.75 0 1 0-1.1-1.02l-1.95 2.1V6.75Z" clip-rule="evenodd"/></svg></div>
-              <div><h3 class="font-semibold text-white mb-1">EOS-Import</h3><p class="text-sm text-gray-400">Importiere CSV-Exporte direkt aus ETC EOS-Pulten. Aktive Kreise erkennt und übernimmt LuxStage automatisch, deine Patchliste steht in Sekunden.</p></div>
+              <div><h3 class="font-semibold text-white mb-1">Eos-Import</h3><p class="text-sm text-gray-400">Importiere CSV-Exporte direkt aus ETC Eos-Pulten. Aktive Kreise erkennt und übernimmt LuxStage automatisch, deine Patchliste steht in Sekunden.</p></div>
             </div>
             <div class="flex items-start gap-4 pb-5 border-b border-white/5">
               <div class="size-9 rounded-xl bg-amber-400/15 flex items-center justify-center shrink-0"><svg class="size-4 text-amber-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.5 2A1.5 1.5 0 0 0 3 3.5v13A1.5 1.5 0 0 0 4.5 18h11a1.5 1.5 0 0 0 1.5-1.5V7.621a1.5 1.5 0 0 0-.44-1.06l-4.12-4.122A1.5 1.5 0 0 0 11.378 2H4.5Z" clip-rule="evenodd"/></svg></div>
@@ -309,7 +323,7 @@
           <p class="text-sm font-medium text-white mb-3">PDF-Export</p>
           <p class="text-sm text-gray-400 mb-6">Mit einem Klick bekommst du einen druckfertigen Bericht, für die Bühne, die Technikabteilung oder die Produzentenmappe.</p>
           <div class="rounded-xl border border-white/10 overflow-hidden">
-            <img src="images/screenshots/crop-export.png?v=2026-10" alt="Export-Menü mit PDF- und CSV-Export" class="w-full h-auto lb-trigger" />
+            <img src="images/screenshots/crop-export-800.webp" srcset="images/screenshots/crop-export-800.webp 800w, images/screenshots/crop-export-880.webp 880w" sizes="(min-width:1024px) 40vw, 100vw" width="880" height="320" alt="Export-Menü mit PDF- und CSV-Export" class="w-full h-auto lb-trigger" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -351,7 +365,7 @@
           </ul>
         </div>
         <div class="rounded-2xl border border-white/10 overflow-hidden">
-          <img src="images/screenshots/crop-vorlagen.png?v=2026-10" alt="Übersicht der Spielstätten-Vorlagen" class="w-full h-auto lb-trigger" />
+          <img src="images/screenshots/crop-vorlagen-800.webp" srcset="images/screenshots/crop-vorlagen-800.webp 800w, images/screenshots/crop-vorlagen-1600.webp 1600w" sizes="(min-width:1024px) 40vw, 100vw" width="2368" height="940" alt="Übersicht der Spielstätten-Vorlagen" class="w-full h-auto lb-trigger" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -383,7 +397,7 @@
         <p class="mt-4 text-gray-400 max-w-2xl">Jeder Zustand deiner Show wird automatisch gesichert, und bei Bedarf stellst du ihn mit einem Klick wieder her. Für den Fall der Fälle, und einfach zur Beruhigung.</p>
       </div>
       <div class="grid gap-6 lg:grid-cols-3">
-        <div class="feat-card"><div class="feat-card-icon bg-gray-700/50 mb-4"><svg class="size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">Automatischer Versionsverlauf</h3><p class="text-sm text-gray-400 mb-4">Alle 10 Minuten speichert LuxStage einen Snapshot des Show-Zustands. In der Timeline mit Datum, Uhrzeit und Nutzer-Info stellst du jeden älteren Zustand wieder her.</p><div class="rounded-lg border border-white/10 overflow-hidden"><img src="images/screenshots/crop-verlauf.png?v=2026-10" alt="Versionsverlauf einer Show" class="w-full h-auto lb-trigger" /></div></div>
+        <div class="feat-card"><div class="feat-card-icon bg-gray-700/50 mb-4"><svg class="size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">Automatischer Versionsverlauf</h3><p class="text-sm text-gray-400 mb-4">Alle 10 Minuten speichert LuxStage einen Snapshot des Show-Zustands. In der Timeline mit Datum, Uhrzeit und Nutzer-Info stellst du jeden älteren Zustand wieder her.</p><div class="rounded-lg border border-white/10 overflow-hidden"><img src="images/screenshots/crop-verlauf-780.webp" srcset="images/screenshots/crop-verlauf-780.webp 780w" sizes="(min-width:1024px) 40vw, 100vw" width="780" height="1320" alt="Versionsverlauf einer Show" class="w-full h-auto lb-trigger" loading="lazy" decoding="async" /></div></div>
         <div class="feat-card"><div class="feat-card-icon bg-blue-400/15 mb-4"><svg class="size-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z"/><path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z"/></svg></div><h3 class="font-semibold text-white mb-2">Vollständiges Backup</h3><p class="text-sm text-gray-400 mb-4">Lade alle Daten, Datenbank und Fotos, als ZIP-Datei herunter. Der Zeitstempel steht automatisch im Dateinamen. Praktisch für externe Archivierung oder vor größeren Änderungen.</p><div class="rounded-lg bg-gray-950/60 border border-white/10 px-3 py-2 font-mono text-xs text-gray-500">backup_2026-04-09_1432.zip</div></div>
         <div class="feat-card"><div class="feat-card-icon bg-green-400/15 mb-4"><svg class="size-5 text-green-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Zm1.23-3.723a.75.75 0 0 0 .219-.53V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.448.389A5.5 5.5 0 0 1 13.89 6.11l.311.31h-2.432a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .53-.219Z" clip-rule="evenodd"/></svg></div><h3 class="font-semibold text-white mb-2">Wiederherstellen</h3><p class="text-sm text-gray-400">Stelle eine frühere ZIP-Datei wieder her. LuxStage prüft sie vor der Anwendung, ein komplettes Rollback ist jederzeit möglich.</p></div>
       </div>
@@ -435,7 +449,7 @@
           <h2 class="text-4xl sm:text-5xl font-semibold tracking-tight text-balance mb-6">LuxStage für dein Theater</h2>
           <p class="text-gray-400 max-w-xl mx-auto mb-10 text-balance">Registriere dich auf luxstage.app und leg direkt los — für iOS und im Browser. einen Monat kostenlos testen, danach 29 € pro Monat oder 290 € pro Jahr, ohne Umsatzsteuer (§ 19 UStG), für das ganze Team.</p>
           <div class="flex flex-wrap items-center justify-center gap-4">
-            <a href="https://luxstage.app/register" class="inline-flex items-center rounded-lg bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent/90 transition-colors shadow-lg shadow-accent/20"><span>Team anlegen &amp; 1 Monat testen</span><svg class="ml-2 size-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/></svg></a>
+            <a href="https://luxstage.app/register" data-umami-event="Team anlegen" data-umami-event-ort="Features" class="inline-flex items-center rounded-lg bg-accent px-8 py-3.5 text-sm font-semibold text-white hover:bg-accent/90 transition-colors shadow-lg shadow-accent/20"><span>Team anlegen &amp; 1 Monat testen</span><svg class="ml-2 size-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/></svg></a>
             <a href="mailto:hello@luxstage.app" class="inline-flex items-center rounded-lg border border-white/10 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors"><span>Schreib mir</span></a>
             <a href="index.html" class="inline-flex items-center rounded-lg border border-white/10 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors">Zurück zur Startseite</a>
           </div>
@@ -443,31 +457,38 @@
       </div>
     </div>
   </section>
-
   <!-- FOOTER -->
-  <footer class="border-t border-white/5 py-10">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="flex items-center gap-2.5 text-sm text-gray-500"><img src="logo.png" alt="LuxStage" class="size-6 rounded-md opacity-80" />LuxStage</div>
-      <p class="text-xs text-gray-700">Web-App & iOS-App für Beleuchtungsdokumentation am Theater · Version __APP_VERSION__</p>
-      <div class="flex items-center gap-4 text-xs text-gray-600">
-        <a href="https://discord.gg/H8ZMSXyJC" target="_blank" rel="noopener" class="hover:text-gray-400 transition-colors">Discord</a>
-        <a href="impressum.html" class="hover:text-gray-400 transition-colors">Impressum</a>
-        <a href="datenschutz.html" class="hover:text-gray-400 transition-colors">Datenschutz</a>
-        <a href="agb.html" class="hover:text-gray-400 transition-colors">AGB</a>
-        <a href="avv.html" class="hover:text-gray-400 transition-colors">AVV</a>
-        <a href="kuendigen.html" class="hover:text-gray-400 transition-colors">Verträge hier kündigen</a>
-        <a href="konto-loeschen.html" class="hover:text-gray-400 transition-colors">Konto löschen</a>
+  <footer class="border-t border-white/5 py-12">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="flex flex-col gap-8 md:flex-row md:justify-between">
+        <div class="max-w-sm">
+          <div class="flex items-center gap-2.5 text-sm text-gray-300 font-medium">
+            <img src="logo.png" alt="" width="24" height="24" class="size-6 rounded-md" />
+            LuxStage
+          </div>
+          <p class="mt-3 text-sm text-gray-400">Der digitale Einleuchtplan für Beleuchtungsabteilungen am Theater.</p>
+          <p class="mt-3 text-xs text-gray-500">Version __APP_VERSION__</p>
+        </div>
+        <div class="grid grid-cols-2 gap-x-12 gap-y-2 text-sm text-gray-400 sm:grid-cols-3">
+          <a href="features.html" class="hover:text-white">Funktionen</a>
+          <a href="fuer-technische-leitung.html" class="hover:text-white">Für die Technische Leitung</a>
+          <a href="updates.html" class="hover:text-white">Updates</a>
+          <a href="ueber.html" class="hover:text-white">Über LuxStage</a>
+          <a href="https://docs.luxstage.app" class="hover:text-white">Dokumentation</a>
+          <a href="https://discord.gg/H8ZMSXyJC" target="_blank" rel="noopener" class="hover:text-white">Discord</a>
+          <a href="index.html#kontakt" class="hover:text-white">Kontakt</a>
+          <a href="impressum.html" class="hover:text-white">Impressum</a>
+          <a href="datenschutz.html" class="hover:text-white">Datenschutz</a>
+          <a href="agb.html" class="hover:text-white">AGB</a>
+          <a href="avv.html" class="hover:text-white">AVV</a>
+          <a href="kuendigen.html" class="hover:text-white">Verträge kündigen</a>
+          <a href="konto-loeschen.html" class="hover:text-white">Konto löschen</a>
+        </div>
       </div>
+      <p class="mt-10 text-xs text-gray-500">ETC und Eos sind Marken von Electronic Theatre Controls, Inc. LuxStage steht in keiner Verbindung zu ETC.</p>
     </div>
   </footer>
 
-  <script>
-    fetch('nav.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('nav-container').innerHTML = html;
-      });
-  </script>
 
 </body>
 </html>

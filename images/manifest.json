@@ -1,0 +1,390 @@
+{
+ "images/iphone-portrait.png": {
+  "width": 1419,
+  "height": 2796,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/iphone-portrait-800.webp"
+   },
+   {
+    "w": 1419,
+    "src": "images/iphone-portrait-1419.webp"
+   }
+  ]
+ },
+ "images/screenshots/Web/Okt2026/aufbaunotizen.png": {
+  "width": 2880,
+  "height": 1800,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/Web/Okt2026/aufbaunotizen-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/Web/Okt2026/aufbaunotizen-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/Web/Okt2026/gassentuerme.png": {
+  "width": 2880,
+  "height": 1800,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/Web/Okt2026/gassentuerme-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/Web/Okt2026/gassentuerme-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/Web/Okt2026/import.png": {
+  "width": 2880,
+  "height": 2300,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/Web/Okt2026/import-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/Web/Okt2026/import-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/Web/Okt2026/kreisliste.png": {
+  "width": 2880,
+  "height": 1800,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/Web/Okt2026/kreisliste-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/Web/Okt2026/kreisliste-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/Web/Okt2026/obermaschinerie.png": {
+  "width": 2880,
+  "height": 1800,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/Web/Okt2026/obermaschinerie-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/Web/Okt2026/obermaschinerie-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/Web/Okt2026/shows.png": {
+  "width": 2880,
+  "height": 1800,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/Web/Okt2026/shows-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/Web/Okt2026/shows-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/Web/Okt2026/verlauf.png": {
+  "width": 2880,
+  "height": 1800,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/Web/Okt2026/verlauf-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/Web/Okt2026/verlauf-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/Web/Okt2026/zeichnung.png": {
+  "width": 2880,
+  "height": 1800,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/Web/Okt2026/zeichnung-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/Web/Okt2026/zeichnung-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/crop-aufbau.png": {
+  "width": 2368,
+  "height": 640,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/crop-aufbau-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/crop-aufbau-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/crop-export.png": {
+  "width": 880,
+  "height": 320,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/crop-export-800.webp"
+   },
+   {
+    "w": 880,
+    "src": "images/screenshots/crop-export-880.webp"
+   }
+  ]
+ },
+ "images/screenshots/crop-fotos.png": {
+  "width": 2368,
+  "height": 820,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/crop-fotos-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/crop-fotos-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/crop-grundriss.png": {
+  "width": 2368,
+  "height": 1440,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/crop-grundriss-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/crop-grundriss-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/crop-kreisliste.png": {
+  "width": 2368,
+  "height": 1000,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/crop-kreisliste-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/crop-kreisliste-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/crop-verlauf.png": {
+  "width": 780,
+  "height": 1320,
+  "variants": [
+   {
+    "w": 780,
+    "src": "images/screenshots/crop-verlauf-780.webp"
+   }
+  ]
+ },
+ "images/screenshots/crop-vorlagen.png": {
+  "width": 2368,
+  "height": 940,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/crop-vorlagen-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/screenshots/crop-vorlagen-1600.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/Aufbau.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/Aufbau-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/Aufbau-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/Beleuchtungstuerme.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/Beleuchtungstuerme-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/Beleuchtungstuerme-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/Fader.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/Fader-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/Fader-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/MovingLights.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/MovingLights-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/MovingLights-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/OSC-Grid-Macros.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/OSC-Grid-Macros-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/OSC-Grid-Macros-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/OSC-Numpad.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/OSC-Numpad-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/OSC-Numpad-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/Obermaschinerie.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/Obermaschinerie-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/Obermaschinerie-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/Patch.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/Patch-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/Patch-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/Playback.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/Playback-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/Playback-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/Shows.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/Shows-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/Shows-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/einleuchten-grid.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/einleuchten-grid-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/einleuchten-grid-940.webp"
+   }
+  ]
+ },
+ "images/screenshots/iOS/Okt2026/einleuchten-liste.png": {
+  "width": 940,
+  "height": 1920,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/screenshots/iOS/Okt2026/einleuchten-liste-800.webp"
+   },
+   {
+    "w": 940,
+    "src": "images/screenshots/iOS/Okt2026/einleuchten-liste-940.webp"
+   }
+  ]
+ }
+}

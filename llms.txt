@@ -1,0 +1,9 @@
+# LuxStage
+
+> Der digitale Einleuchtplan für Beleuchtungsabteilungen am Theater (für ETC Eos). Web-App und iOS-App, in Echtzeit synchron. 1 Monat kostenlos testen, danach 29 € pro Monat oder 290 € pro Jahr für das ganze Team.
+
+- [Startseite](https://luxstage.app/)
+- [Funktionen](https://luxstage.app/features.html)
+- [Für die Technische Leitung](https://luxstage.app/fuer-technische-leitung.html)
+- [Updates](https://luxstage.app/updates.html)
+- [Dokumentation](https://docs.luxstage.app)

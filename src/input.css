@@ -2,7 +2,26 @@
 
 @theme {
   --color-accent: #e96161;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-sans: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@font-face {
+  font-family: "Inter Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("fonts/inter-latin.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("fonts/inter-latin-ext.woff2") format("woff2-variations");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @source "../*.html";
@@ -30,4 +49,107 @@
 
 .feat-card-icon-sm {
   @apply inline-flex items-center justify-center size-9 rounded-xl mb-4;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-colors bg-accent text-white shadow-lg shadow-accent/20 hover:bg-accent/90;
+}
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-colors border border-white/10 bg-white/5 text-white hover:bg-white/10;
+}
+
+/* Sektionen: Rhythmus */
+.section {
+  @apply py-20 sm:py-28 border-t border-white/5;
+}
+.section-alt {
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.7), rgba(3, 7, 18, 0));
+}
+.eyebrow {
+  @apply font-mono text-xs uppercase tracking-[0.18em] text-accent mb-4;
+}
+.h2 {
+  @apply text-3xl sm:text-5xl font-semibold tracking-tight text-balance;
+}
+
+/* Geräterahmen */
+.frame-browser {
+  @apply rounded-xl border border-white/10 bg-gray-900 overflow-hidden shadow-2xl shadow-black/50;
+}
+.frame-browser::before {
+  content: "";
+  display: block;
+  height: 28px;
+  background:
+    radial-gradient(circle at 14px 14px, #ff5f57 4px, transparent 5px),
+    radial-gradient(circle at 30px 14px, #febc2e 4px, transparent 5px),
+    radial-gradient(circle at 46px 14px, #28c840 4px, transparent 5px),
+    #1f2937;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.frame-phone {
+  @apply rounded-[2rem] border-[6px] border-gray-800 bg-black overflow-hidden shadow-2xl shadow-black/60 ring-1 ring-white/10;
+}
+
+/* Scroll-Einblendung */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+.no-js .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* FAQ */
+details.faq summary {
+  cursor: pointer;
+  list-style: none;
+}
+details.faq summary::-webkit-details-marker {
+  display: none;
+}
+details.faq[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.prose-lx h2 { @apply text-2xl font-semibold text-white mt-12 mb-3; }
+.prose-lx h3 { @apply text-lg font-semibold text-white mt-8 mb-2; }
+.prose-lx p, .prose-lx li { @apply text-gray-300 leading-relaxed; }
+.prose-lx p { @apply my-4; }
+.prose-lx ul { @apply list-disc pl-6 my-4 space-y-1.5; }
+.prose-lx ol { @apply list-decimal pl-6 my-4 space-y-1.5; }
+.prose-lx a { @apply text-accent underline underline-offset-2 hover:text-white; }
+
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { background: #fff !important; color: #111 !important; }
+  .prose-lx h2, .prose-lx h3, .prose-lx p, .prose-lx li { color: #111 !important; }
+  .print-card { border: 1px solid #ccc !important; background: #fff !important; }
+}
+
+h1, h2 {
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
