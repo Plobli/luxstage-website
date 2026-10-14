@@ -5,5 +5,5 @@
 - [Startseite](https://luxstage.app/)
 - [Funktionen](https://luxstage.app/features.html)
 - [Für die Technische Leitung](https://luxstage.app/fuer-technische-leitung.html)
-- [Updates](https://luxstage.app/updates.html)
+- [News](https://luxstage.app/news.html)
 - [Dokumentation](https://docs.luxstage.app)

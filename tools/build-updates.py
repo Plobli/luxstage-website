@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Erzeugt updates.html aus den bereits versendeten Newslettern.
+"""Erzeugt news.html aus den bereits versendeten Newslettern.
 Quelle: ../Newsletter/JJJJ-MM-TT_Newsletter-Entwurf.md, aufgenommen nur, wenn das Datum im Versand-Log
 ../changes/_newsletter-versand.md steht (Format: `- JJJJ-MM-TT | Kampagne | Betreff`, gepflegt von
 `luxstage.py newsletter-versendet`). Bilder: images/updates/<name>.png (Quelle) + WebP-Varianten (`npm run images`).
@@ -78,15 +78,15 @@ arts = '\n'.join(f'''      <article class="mt-14 first:mt-10">
         </div>
       </article>''' for d, s, b in items)
 
-page = head('Updates – LuxStage', 'Was sich in LuxStage zuletzt verbessert hat: die Neuigkeiten aus dem Newsletter.', 'updates.html') + f'''
+page = head('News – LuxStage', 'Was sich in LuxStage zuletzt verbessert hat: die Neuigkeiten aus dem Newsletter.', 'news.html') + f'''
   <main class="pt-28 pb-20 sm:pt-36">
     <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-      <p class="eyebrow">Updates</p>
+      <p class="eyebrow">News</p>
       <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight text-balance">Was neu ist in LuxStage</h1>
       <p class="mt-4 text-gray-300">Die Neuigkeiten aus unserem Newsletter, nach dem Versand hier nachzulesen.</p>
 {arts}
     </div>
   </main>
 ''' + FOOT
-open(os.path.join(ROOT, 'updates.html'), 'w', encoding='utf-8').write(page)
+open(os.path.join(ROOT, 'news.html'), 'w', encoding='utf-8').write(page)
 print(len(items), 'Newsletter:', ', '.join(d for d, _, _ in items))

@@ -164,3 +164,12 @@ h1, h2 {
 .seg button[aria-pressed="true"] {
   @apply bg-accent text-white shadow-md shadow-accent/20;
 }
+
+/* Umschalt-Bereiche liegen übereinander; der inaktive bleibt unsichtbar im Layout, damit die Höhe stabil bleibt */
+@layer base {
+  .stack > [hidden] {
+    display: block !important;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

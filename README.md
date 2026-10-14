@@ -4,7 +4,7 @@ Marketing-Website für [LuxStage](https://luxstage.app). Statisches HTML, Tailwi
 
 ## Dateien
 
-- `index.html`, `features.html`, `fuer-technische-leitung.html`, `ueber.html`, `updates.html` – Seiten
+- `index.html`, `features.html`, `fuer-technische-leitung.html`, `ueber.html`, `news.html` – Seiten
 - `einleuchtplan-digital-fuehren.html`, `eos-kreisliste-importieren.html`, `aufbaudokumentation-theater.html` – Ratgeber-Entwürfe (`noindex`, nicht verlinkt, Faktencheck offen)
 - `agb.html`, `avv.html`, `datenschutz.html`, `impressum.html`, `kuendigen.html`, `konto-loeschen.html`, `privacy.html` – Rechtliches
 - `nav.html` – Navigation; `<div id="nav-container"></div>` wird beim Build durch sie ersetzt
@@ -22,7 +22,7 @@ npm run build    # Tailwind + dist/
 npm run watch    # nur CSS beobachten
 npm run images   # PNG -> WebP (800/1600 px), schreibt images/manifest.json
 npm run og       # og-image.png neu rendern
-python3 tools/build-updates.py   # updates.html aus versendeten Newslettern erzeugen
+python3 tools/build-updates.py   # news.html aus versendeten Newslettern erzeugen
 ```
 
 Neue Screenshots: PNG ablegen, `npm run images`, im HTML `srcset` auf die erzeugten `-800.webp`/`-1600.webp` verweisen (Breite/Höhe stehen in `images/manifest.json`).
