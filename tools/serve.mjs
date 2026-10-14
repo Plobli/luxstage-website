@@ -10,7 +10,7 @@ createServer(async (req, res) => {
   if (p.endsWith('/')) p += 'index.html';
   try {
     const data = await readFile(join('dist', p));
-    res.writeHead(200, { 'Content-Type': types[extname(p)] || 'application/octet-stream' });
+    res.writeHead(200, { 'Content-Type': types[extname(p)] || 'application/octet-stream', 'Cache-Control': 'no-store' });
     res.end(data);
   } catch {
     const nf = await readFile('dist/404.html').catch(() => 'Nicht gefunden');

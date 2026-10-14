@@ -15,7 +15,9 @@ function walk(dir) {
   });
 }
 
-for (const file of walk(ROOT).filter((f) => extname(f) === '.png')) {
+// Alte Duplikate (iOS/*.png ohne Okt2026, hand-iphone) werden nicht verarbeitet
+const SKIP = /screenshots\/iOS\/[^/]+\.png$|hand-iphone/;
+for (const file of walk(ROOT).filter((f) => extname(f) === '.png' && !SKIP.test(f))) {
   const img = sharp(file);
   const { width, height } = await img.metadata();
   const base = file.slice(0, -4);
