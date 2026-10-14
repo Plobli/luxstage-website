@@ -15,13 +15,6 @@
     items.forEach(function (e) { io.observe(e); });
   }
 
-  // Hero-Variante per URL: ?h=b (kein Cookie)
-  var h1 = document.getElementById('hero-h1');
-  if (h1) {
-    var v = new URLSearchParams(location.search).get('h') === 'b' ? 'b' : 'a';
-    h1.querySelectorAll('[data-h]').forEach(function (s) { s.hidden = s.getAttribute('data-h') !== v; });
-  }
-
   // Plattform-Umschalter im Hero
   var ios = document.getElementById('hero-ios'), web = document.getElementById('hero-web');
   document.querySelectorAll('.plat-btn').forEach(function (b) {

@@ -9,7 +9,7 @@ Marketing-Website für [LuxStage](https://luxstage.app). Statisches HTML, Tailwi
 - `agb.html`, `avv.html`, `datenschutz.html`, `impressum.html`, `kuendigen.html`, `konto-loeschen.html`, `privacy.html` – Rechtliches
 - `nav.html` – Navigation; `<div id="nav-container"></div>` wird beim Build durch sie ersetzt
 - `src/input.css` – Tailwind-Quelle (Schrift, Komponenten, Druck-CSS); `styles.css` wird erzeugt
-- `site.js` – Einblendungen, Hero-Variante (`?h=b`), Plattform-Umschalter, Demo-Modal; `lightbox.js` – Bildvergrößerung
+- `site.js` – Einblendungen, Plattform-Umschalter, Demo-Modal; `lightbox.js` – Bildvergrößerung
 - `fonts/` – Inter (selbst gehostet); `images/` – Screenshots als PNG-Original plus WebP-Varianten
 - `robots.txt`, `sitemap.xml`, `llms.txt`, `404.html`, `default.conf` (nginx), `og-image.png`
 - `tools/` – `inline-nav.mjs` (Build nach `dist/`), `serve.mjs`, `optimize-images.mjs`, `render-og.mjs`, `build-updates.py`
