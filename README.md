@@ -12,7 +12,7 @@ Marketing-Website für [LuxStage](https://luxstage.app). Statisches HTML, Tailwi
 - `site.js` – Einblendungen, Plattform-Umschalter, Demo-Modal; `lightbox.js` – Bildvergrößerung
 - `fonts/` – Inter (selbst gehostet); `images/` – Screenshots als PNG-Original plus WebP-Varianten
 - `robots.txt`, `sitemap.xml`, `llms.txt`, `404.html`, `default.conf` (nginx), `og-image.png`
-- `tools/` – `inline-nav.mjs` (Build nach `dist/`), `serve.mjs`, `optimize-images.mjs`, `render-og.mjs`, `build-updates.py`
+- `tools/` – `inline-nav.mjs` (Build nach `dist/`), `serve.mjs`, `optimize-images.mjs`, `render-og.mjs`, `build-updates.py` (nur Newsletter, die im Versand-Log stehen)
 
 ## Befehle
 
@@ -22,7 +22,7 @@ npm run build    # Tailwind + dist/
 npm run watch    # nur CSS beobachten
 npm run images   # PNG -> WebP (800/1600 px), schreibt images/manifest.json
 npm run og       # og-image.png neu rendern
-python3 tools/build-updates.py   # updates.html aus ../changes/ erzeugen
+python3 tools/build-updates.py   # updates.html aus versendeten Newslettern erzeugen
 ```
 
 Neue Screenshots: PNG ablegen, `npm run images`, im HTML `srcset` auf die erzeugten `-800.webp`/`-1600.webp` verweisen (Breite/Höhe stehen in `images/manifest.json`).

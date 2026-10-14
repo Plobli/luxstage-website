@@ -386,5 +386,83 @@
     "src": "images/screenshots/iOS/Okt2026/einleuchten-liste-1206.webp"
    }
   ]
+ },
+ "images/updates/ausblenden.png": {
+  "width": 568,
+  "height": 214,
+  "variants": [
+   {
+    "w": 568,
+    "src": "images/updates/ausblenden-568.webp"
+   }
+  ]
+ },
+ "images/updates/navigation-dock.png": {
+  "width": 2000,
+  "height": 189,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/updates/navigation-dock-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/updates/navigation-dock-1600.webp"
+   }
+  ]
+ },
+ "images/updates/prio.png": {
+  "width": 266,
+  "height": 862,
+  "variants": [
+   {
+    "w": 266,
+    "src": "images/updates/prio-266.webp"
+   }
+  ]
+ },
+ "images/updates/rotate.png": {
+  "width": 782,
+  "height": 132,
+  "variants": [
+   {
+    "w": 782,
+    "src": "images/updates/rotate-782.webp"
+   }
+  ]
+ },
+ "images/updates/row-edit-bulk.png": {
+  "width": 1158,
+  "height": 800,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/updates/row-edit-bulk-800.webp"
+   },
+   {
+    "w": 1158,
+    "src": "images/updates/row-edit-bulk-1158.webp"
+   }
+  ]
+ },
+ "images/updates/zeichnung-panel.png": {
+  "width": 608,
+  "height": 916,
+  "variants": [
+   {
+    "w": 608,
+    "src": "images/updates/zeichnung-panel-608.webp"
+   }
+  ]
+ },
+ "images/updates/zweite-folie.png": {
+  "width": 622,
+  "height": 370,
+  "variants": [
+   {
+    "w": 622,
+    "src": "images/updates/zweite-folie-622.webp"
+   }
+  ]
  }
 }

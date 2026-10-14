@@ -1,5 +1,0 @@
-# Records, die nicht auf der Updates-Seite erscheinen sollen (Konzepte, Interna)
-2026-10-11-bearbeiten-in-den-apps-konzept-und-umsetzung-ios-d.md
-2026-10-08-zeichnung-ist-nicht-formatfuellend-im-pdf-zeichnun.md
-2026-09-12-light-mode-entfernt.md
-2026-09-29-team-loeschung-anfragen.md
