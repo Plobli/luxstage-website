@@ -15,14 +15,14 @@
     items.forEach(function (e) { io.observe(e); });
   }
 
-  // Plattform-Umschalter im Hero
-  var ios = document.getElementById('hero-ios'), web = document.getElementById('hero-web');
-  document.querySelectorAll('.plat-btn').forEach(function (b) {
+  // Umschalter Smartphone | Desktop: Buttons und Panels über data-group und data-target
+  document.querySelectorAll('.seg button[data-group]').forEach(function (b) {
     b.addEventListener('click', function () {
-      var isIos = b.getAttribute('data-platform') === 'ios';
-      if (ios) ios.hidden = !isIos;
-      if (web) web.hidden = isIos;
-      document.querySelectorAll('.plat-btn').forEach(function (o) { o.setAttribute('aria-pressed', String(o === b)); });
+      var g = b.getAttribute('data-group');
+      document.querySelectorAll('[data-group="' + g + '"]').forEach(function (el) {
+        if (el.tagName === 'BUTTON') el.setAttribute('aria-pressed', String(el === b));
+        else el.hidden = el.id !== b.getAttribute('data-target');
+      });
     });
   });
 
