@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Erzeugt news.html aus den bereits versendeten Newslettern.
 Quelle: ../Newsletter/JJJJ-MM-TT_Newsletter-Entwurf.md, aufgenommen nur, wenn das Datum im Versand-Log
-../changes/_newsletter-versand.md steht (Format: `- JJJJ-MM-TT | Kampagne | Betreff`, gepflegt von
+../cockpit-daten/changes/_newsletter-versand.md steht (Format: `- JJJJ-MM-TT | Kampagne | Betreff`, gepflegt von
 `luxstage.py newsletter-versendet`). Bilder: images/updates/<name>.png (Quelle) + WebP-Varianten (`npm run images`).
 Aufruf: python3 tools/build-updates.py   (danach npm run build)"""
 import html, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NL = os.path.join(ROOT, '..', 'Newsletter')
-LOG = os.path.join(ROOT, '..', 'changes', '_newsletter-versand.md')
+LOG = os.path.join(ROOT, '..', 'cockpit-daten', 'changes', '_newsletter-versand.md')
 MANIFEST = json.load(open(os.path.join(ROOT, 'images', 'manifest.json')))
 MONATE = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember']
 
