@@ -76,7 +76,7 @@ jobs:
             echo "tags<<EOF"
             echo "$IMG:latest"
             echo "$IMG:$VERSION"
-            echo "$IMG:${GITHUB_SHA::7}"
+            echo "$IMG:sha-${GITHUB_SHA::7}"
             echo "EOF"
             echo "labels<<EOF"
             echo "org.opencontainers.image.version=$VERSION"
