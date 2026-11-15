@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.christopherrohde.luxstage",
+      "sha256_cert_fingerprints": [
+        "F0:82:B4:62:84:D3:7F:B7:13:F4:39:D0:15:79:DC:DB:5A:32:C7:5E:10:DA:66:57:DB:00:72:92:A3:B8:76:12",
+        "EE:DD:B4:B7:BC:09:33:14:7E:CE:F8:61:4C:0C:51:D5:84:32:FD:32:81:D4:1B:90:B4:38:88:8E:07:E0:02:19",
+        "E6:90:1D:5D:45:61:EB:D3:1F:B9:87:21:F1:66:FF:5D:B1:9B:31:31:0C:98:A3:18:1A:8A:58:B7:C0:0F:31:89"
+      ]
+    }
+  }
+]

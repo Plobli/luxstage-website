@@ -14,7 +14,7 @@ for (const f of readdirSync('.').filter((n) => n.endsWith('.html') && n !== 'nav
 for (const f of ['styles.css', 'site.js', 'lightbox.js', 'logo.png', 'og-image.png', 'robots.txt', 'sitemap.xml', 'llms.txt']) {
   if (existsSync(f)) cpSync(f, `${OUT}/${f}`);
 }
-for (const d of ['fonts', 'images', 'video']) {
+for (const d of ['fonts', 'images', 'video', '.well-known']) {
   // PNG-Originale und Manifest bleiben im Repo, nicht im Image
   if (existsSync(d)) cpSync(d, `${OUT}/${d}`, { recursive: true, filter: (src) => !/\.png$|manifest\.json$/.test(src) });
 }

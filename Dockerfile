@@ -7,6 +7,7 @@ COPY tools ./tools
 COPY *.html *.js *.png *.txt *.xml ./
 COPY fonts ./fonts
 COPY images ./images
+COPY .well-known ./.well-known
 # Tailwind-CSS bauen und Navigation in die Seiten einsetzen (Ergebnis: dist/)
 RUN npm run build
 
