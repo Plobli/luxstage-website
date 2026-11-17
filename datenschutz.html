@@ -21,7 +21,7 @@
   <section class="relative overflow-hidden pt-32 pb-24 grid-bg">
     <div class="relative mx-auto max-w-3xl px-6 lg:px-8">
       <h1 class="text-4xl font-semibold tracking-tight text-white mb-2">Datenschutzerklärung</h1>
-      <p class="text-sm text-gray-500 mb-10">Zuletzt aktualisiert: September 2026</p>
+      <p class="text-sm text-gray-500 mb-10">Zuletzt aktualisiert: November 2026</p>
 
       <div class="text-gray-400 space-y-8 leading-relaxed">
 
@@ -131,11 +131,35 @@
         </section>
 
         <section>
+          <h2 class="text-lg font-semibold text-white mb-2">Fehlerüberwachung (Sentry)</h2>
+          <p>
+            Damit Abstürze und Fehler schnell behoben werden können, setzen wir den Dienst Sentry ein
+            (Sentry, Functional Software, Inc., USA) und nutzen dessen EU-Region (Frankfurt). Sentry erhält nur
+            technische Fehlerinformationen: die Fehlermeldung, den Programmablauf zum Zeitpunkt des Fehlers
+            (Stack-Trace), die App- und Systemversion sowie den Gerätetyp. Wir übermitteln keine Namen,
+            Benutzerkonten, Show-Inhalte, Fotos oder IP-Adressen und speichern sie dort nicht.
+          </p>
+          <p class="mt-3">
+            In der <strong class="text-white">Web-App und auf dem Server</strong> läuft die Fehlerüberwachung
+            automatisch. Die Fehlerpakete der Web-App gehen zuerst an den LuxStage-Server und von dort an Sentry.
+            In der <strong class="text-white">iOS-, Android- und Desktop-App</strong> werden Fehler nur gesendet,
+            wenn du in den Einstellungen zugestimmt hast. Du kannst die Zustimmung jederzeit widerrufen.
+          </p>
+          <p class="mt-3">
+            Rechtsgrundlage ist bei Web-App und Server unser berechtigtes Interesse an einem stabilen Betrieb
+            (Art. 6 Abs. 1 lit. f DSGVO), in den Apps deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
+            Es gilt der Auftragsverarbeitungsvertrag von Sentry. Die Daten werden dort nach einer begrenzten
+            Aufbewahrungsfrist automatisch gelöscht.
+          </p>
+        </section>
+
+        <section>
           <h2 class="text-lg font-semibold text-white mb-2">Analysedaten &amp; Tracking</h2>
           <p>
             Die LuxStage-Apps enthalten <strong class="text-white">kein Tracking</strong>,
             <strong class="text-white">keine Analysebibliotheken</strong> und <strong class="text-white">keine Werbung</strong>.
             Es werden keine Nutzungsdaten an den App-Entwickler übermittelt.
+            Für Fehlerberichte siehe Abschnitt „Fehlerüberwachung (Sentry)“.
           </p>
         </section>
 
@@ -175,7 +199,7 @@
                 <tr><td class="py-2 pr-4">Kaufhistorie</td><td class="py-2 pr-4">Durch Apple</td><td class="py-2">App-Store-Betrieb</td></tr>
                 <tr><td class="py-2 pr-4">Gerätekennungen</td><td class="py-2 pr-4">Keine</td><td class="py-2">–</td></tr>
                 <tr><td class="py-2 pr-4">Nutzungsdaten</td><td class="py-2 pr-4">Keine</td><td class="py-2">–</td></tr>
-                <tr><td class="py-2 pr-4">Diagnosedaten</td><td class="py-2 pr-4">Keine</td><td class="py-2">–</td></tr>
+                <tr><td class="py-2 pr-4">Diagnosedaten (Absturzdaten)</td><td class="py-2 pr-4">Nur nach Einwilligung, an Sentry (Auftragsverarbeiter)</td><td class="py-2">App-Funktionalität (Fehlerbehebung)</td></tr>
                 <tr><td class="py-2 pr-4">Kontaktdaten</td><td class="py-2 pr-4">Keine</td><td class="py-2">–</td></tr>
                 <tr><td class="py-2 pr-4">Fotos</td><td class="py-2 pr-4">Optional, lokal</td><td class="py-2">Nur auf den LuxStage-Server</td></tr>
               </tbody>
@@ -183,11 +207,11 @@
           </div>
           <p class="mt-3">
             <strong class="text-white">Data Not Linked to You</strong> — es werden keine Daten mit deiner Person
-            verknüpft oder an Dritte übermittelt.
+            verknüpft. Absturzdaten gehen nur nach deiner Einwilligung an unseren Dienstleister Sentry.
           </p>
           <p class="mt-3">
-            In der Google Play „Data Safety"-Sektion der Android-App gelten dieselben Angaben: Es werden keine
-            Nutzungs-, Diagnose- oder Gerätedaten an den App-Entwickler erhoben oder mit Dritten geteilt.
+            In der Google Play „Data Safety"-Sektion der Android-App gelten dieselben Angaben: Absturz- und Diagnosedaten
+            werden nur nach deiner Einwilligung an unseren Dienstleister Sentry gesendet, nicht mit dir verknüpft. Nutzungs- und Gerätedaten werden nicht erhoben.
           </p>
         </section>
 
