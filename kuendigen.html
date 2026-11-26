@@ -49,8 +49,8 @@
           <h2 class="text-lg font-semibold text-white">Deine Kündigung ist eingegangen</h2>
           <p>Vertrag: LuxStage Team <span id="done-team" class="font-semibold text-white"></span></p>
           <p>Eingegangen am: <span id="done-at" class="font-semibold text-white"></span> Uhr</p>
-          <p>Das Abo endet am: <span id="done-ends" class="font-semibold text-white"></span></p>
-          <p>Eine Bestätigung mit diesen Angaben haben wir an deine E-Mail-Adresse geschickt. Du kannst diese Seite auch drucken oder als PDF speichern.</p>
+          <p>Das Abo endet zum Ende des laufenden Abrechnungszeitraums.</p>
+          <p>Wenn Team-Kürzel und E-Mail-Adresse zum Vertrag passen, bekommst du in wenigen Minuten eine Bestätigung mit dem genauen Enddatum an diese Adresse. Kommt keine Mail, prüf bitte deine Angaben oder schreib an <a href="mailto:hello@luxstage.app" class="underline text-white">hello@luxstage.app</a>. Du kannst diese Seite auch drucken oder als PDF speichern.</p>
           <button type="button" onclick="window.print()" class="rounded-lg border border-white/20 px-4 py-2 text-sm text-white hover:bg-white/10">Seite drucken oder speichern</button>
         </div>
 
@@ -73,9 +73,8 @@
               })
               const data = await res.json().catch(() => ({}))
               if (!res.ok) throw new Error(data.error || 'Die Kündigung konnte nicht verarbeitet werden. Bitte schreib an hello@luxstage.app.')
-              document.getElementById('done-team').textContent = data.teamId
-              document.getElementById('done-at').textContent = fmt(data.requestedAt)
-              document.getElementById('done-ends').textContent = data.endsAt ? fmt(data.endsAt) + ' Uhr' : 'zum Ende des laufenden Abrechnungszeitraums'
+              document.getElementById('done-team').textContent = form.teamId.value.trim().toLowerCase()
+              document.getElementById('done-at').textContent = fmt(data.requestedAt || Date.now())
               form.classList.add('hidden')
               document.getElementById('cancel-done').classList.remove('hidden')
             } catch (ex) {
