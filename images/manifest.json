@@ -387,6 +387,48 @@
    }
   ]
  },
+ "images/updates/2026-11-15-einleuchtplan.png": {
+  "width": 2880,
+  "height": 1380,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/updates/2026-11-15-einleuchtplan-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/updates/2026-11-15-einleuchtplan-1600.webp"
+   }
+  ]
+ },
+ "images/updates/2026-11-15-import-pult-felder.png": {
+  "width": 1792,
+  "height": 840,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/updates/2026-11-15-import-pult-felder-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/updates/2026-11-15-import-pult-felder-1600.webp"
+   }
+  ]
+ },
+ "images/updates/2026-11-15-navigation-bereiche.png": {
+  "width": 2340,
+  "height": 148,
+  "variants": [
+   {
+    "w": 800,
+    "src": "images/updates/2026-11-15-navigation-bereiche-800.webp"
+   },
+   {
+    "w": 1600,
+    "src": "images/updates/2026-11-15-navigation-bereiche-1600.webp"
+   }
+  ]
+ },
  "images/updates/ausblenden.png": {
   "width": 568,
   "height": 214,
