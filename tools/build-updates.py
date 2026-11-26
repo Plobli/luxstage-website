@@ -83,7 +83,6 @@ page = head('News – LuxStage', 'Was sich in LuxStage zuletzt verbessert hat: d
     <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
       <p class="eyebrow">News</p>
       <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight text-balance">Was neu ist in LuxStage</h1>
-      <p class="mt-4 text-gray-300">Die Neuigkeiten aus unserem Newsletter, nach dem Versand hier nachzulesen.</p>
 {arts}
     </div>
   </main>
